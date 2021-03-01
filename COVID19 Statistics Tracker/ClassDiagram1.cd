@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Alphabetical">
+  <Class Name="COVID19_Statistics_Tracker.CoronaDataClass">
+    <Position X="11.5" Y="5.5" Width="2" />
+    <Members>
+      <Method Name="CreateDictionary" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAQAAAACiAAABAAAAAAACAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CoronaDataClass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="COVID19_Statistics_Tracker.CountryGraphPage" BaseTypeListCollapsed="true">
+    <Position X="0.75" Y="2.25" Width="2" />
+    <Members>
+      <Method Name="chart_Loaded" Hidden="true" />
+      <Method Name="NavTopBar_Loaded" Hidden="true" />
+      <Method Name="NavView_ItemInvoked" Hidden="true" />
+      <Method Name="NavView_Loaded" Hidden="true" />
+      <Method Name="On_Navigated" Hidden="true" />
+      <Method Name="On_Navigated_TopBar" Hidden="true" />
+      <Method Name="OnNavigatedTo" Hidden="true" />
+      <Method Name="TopNavBar_ItemInvoked" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>IIAAgAAAABAAIAAAAAAEAAQAAAAAJAAIAAAABAAAAAA=</HashCode>
+      <FileName>CountryGraphPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="COVID19_Statistics_Tracker.CountryPage" BaseTypeListCollapsed="true">
+    <Position X="3.5" Y="2.25" Width="2" />
+    <Members>
+      <Method Name="NavTopBar_Loaded" Hidden="true" />
+      <Method Name="NavView_ItemInvoked" Hidden="true" />
+      <Method Name="NavView_Loaded" Hidden="true" />
+      <Method Name="On_Navigated" Hidden="true" />
+      <Method Name="On_Navigated_TopBar" Hidden="true" />
+      <Method Name="OnNavigatedTo" Hidden="true" />
+      <Method Name="StartUp" Hidden="true" />
+      <Method Name="TopNavBar_ItemInvoked" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AIAAgCAAABAAIAAAAAAEAAQAAAAAJAAAAAAABAAAAAA=</HashCode>
+      <FileName>CountryPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.228" Collapsed="true" />
+  </Class>
+  <Class Name="COVID19_Statistics_Tracker.MainPage" BaseTypeListCollapsed="true">
+    <Position X="6.25" Y="2.25" Width="2" />
+    <Members>
+      <Method Name="NavView_ItemInvoked" Hidden="true" />
+      <Method Name="NavView_Loaded" Hidden="true" />
+      <Method Name="On_Navigated" Hidden="true" />
+      <Method Name="OnclickSource" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAEAAAAAAAAAAAAAQAAAAAJAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MainPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="COVID19_Statistics_Tracker.VariablesClass">
+    <Position X="8.5" Y="5.5" Width="1.5" />
+    <Members>
+      <Property Name="MainNavEvent" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>VariablesClass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Windows.UI.Xaml.Controls.Page">
+    <Position X="3.25" Y="0.5" Width="2.25" />
+    <Members>
+      <Property Name="BottomAppBar" Hidden="true" />
+      <Property Name="BottomAppBarProperty" Hidden="true" />
+      <Property Name="Frame" Hidden="true" />
+      <Property Name="FrameProperty" Hidden="true" />
+      <Property Name="NavigationCacheMode" Hidden="true" />
+      <Method Name="OnNavigatedFrom" Hidden="true" />
+      <Method Name="OnNavigatedTo" Hidden="true" />
+      <Method Name="OnNavigatingFrom" Hidden="true" />
+      <Method Name="Page" Hidden="true" />
+      <Method Name="put_BottomAppBar" Hidden="true" />
+      <Method Name="put_NavigationCacheMode" Hidden="true" />
+      <Method Name="put_TopAppBar" Hidden="true" />
+      <Property Name="TopAppBar" Hidden="true" />
+      <Property Name="TopAppBarProperty" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Members" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Object">
+    <Position X="9.5" Y="3.75" Width="1.75" />
+    <Members>
+      <Method Name="Finalize" Hidden="true" />
+      <Method Name="Equals" Hidden="true" />
+      <Method Name="GetHashCode" Hidden="true" />
+      <Method Name="GetType" Hidden="true" />
+      <Method Name="MemberwiseClone" Hidden="true" />
+      <Method Name="Object" Hidden="true" />
+      <Method Name="ReferenceEquals" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+    </Members>
+    <TypeIdentifier />
+  </Class>
+  <Struct Name="COVID19_Statistics_Tracker.PrimaryCoronaData">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAAQAQAAAAAAAAAICAAAAIAAQgAA=</HashCode>
+      <FileName>CoronaDataClass.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="COVID19_Statistics_Tracker.SecondaryCoronaData">
+    <Position X="12.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CoronaDataClass.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="COVID19_Statistics_Tracker.GraphObjectData">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAAAAAQAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>CoronaDataClass.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

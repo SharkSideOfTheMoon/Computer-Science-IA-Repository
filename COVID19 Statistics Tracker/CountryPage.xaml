@@ -1,0 +1,299 @@
+﻿<Page
+    x:Class="COVID19_Statistics_Tracker.CountryPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:COVID19_Statistics_Tracker"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Viewbox Stretch="UniformToFill">
+        <Grid Height="1080" Width="1920">
+            <Rectangle HorizontalAlignment="Center" Height="1080" VerticalAlignment="Center" Width="1920">
+                <Rectangle.FocusVisualPrimaryBrush>
+                    <ImageBrush ImageSource="/Assets/Background_no_buttons.png"/>
+                </Rectangle.FocusVisualPrimaryBrush>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="/Assets/Background_no_buttons.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle HorizontalAlignment="Center" Height="40" VerticalAlignment="Top" Width="1920" Fill="White"/>
+            <ScrollViewer x:Name="SViewer" VerticalSnapPointsType="None" CanContentRenderOutsideBounds="True" HorizontalAlignment="Left" VerticalAlignment="Top" Width="316" Height="1032">
+                <NavigationView x:Name="NavView"
+                        Loaded="NavView_Loaded"
+                        ItemInvoked="NavView_ItemInvoked"
+                        Width="316" Height="1030"
+                    IsPaneToggleButtonVisible="False" IsBackEnabled="False" IsSettingsVisible="False" IsEnabled="True" IsHitTestVisible="True" IsPaneVisible="True" IsPaneOpen="True" PaneDisplayMode="Left" IsBackButtonVisible="Collapsed">
+
+                    <NavigationView.MenuItems>
+
+                        <NavigationViewItemSeparator/>
+                        <NavigationViewItem Tag="home" Icon="Home" Content="Home"/>
+
+                        <NavigationViewItemHeader x:Name="MainPagesHeader"
+                                        Content="Countries"/>
+
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Afghanistan"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Albania"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Algeria"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Andorra"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Angola"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Anguilla"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Argentina"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Armenia"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Aruba"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Australia"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Austria"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Azerbaijan"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Bahamas"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Bahrain"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Bangladesh"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Barbados"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Belarus"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Belgium"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Belize"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Benin"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Bermuda"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Bhutan"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Bolivia"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Bosnia"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Botswana"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Bouvet Island"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Brazil"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="British Indian Ocean Territory"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Brunei"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Bulgaria"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Burkina Faso"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Burundi"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Cabo Verde"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Cambodia"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Cameroon"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Canada"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Cayman Islands"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Central African Republic"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Caribbean Netherlands"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Chad"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Chile"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="China"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Christmas Island"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Cocos (Keeling) Islands"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Colombia"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Comoros"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="DRC"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Congo"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Cook Islands"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Costa Rica"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Côte d'Ivoire"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Croatia"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Curaçao"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Cyprus"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Cuba"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Czechia"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Denmark"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Djibouti"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Dominica"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Dominican Republic"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Ecuador"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Egypt"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="El Salvador"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Congo"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Equatorial Guinea"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Eritrea"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Estonia"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Ethiopia"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Falkland Islands (Malvinas)"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Faroe Islands"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Fiji"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Finland"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="France"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="French Guiana"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="French Polynesia"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="French Southern Territories"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Gabon"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Gambia"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Georgia"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Germany"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Ghana"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Gibraltar"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Greece"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Greenland"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Grenada"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Guadeloupe"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Guam"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Guatemala"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Guernsey"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Guinea"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Guyana"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Guinea-Bissau"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Haiti"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Heard Island and McDonald Islands"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Holy See (Vatican City State)"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Honduras"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Hong Kong"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Hungary"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Iceland"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="India"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Indonesia"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Iran"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Iraq"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Ireland"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Isle of Man"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Israel"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Italy"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Jamaica"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Japan"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Channel Islands"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Jordan"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Kazakhstan"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Kenya"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Kiribati"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Kosovo"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="N. Korea"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="S. Korea"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Kuwait"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Kyrgyzstan"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Lao People's Democratic Republic"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Latvia"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Lebanon"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Lesotho"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Liberia"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Libyan Arab Jamahiriya"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Liechtenstein"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Lithuania"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Luxembourg"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Macao"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Macedonia"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Madagascar"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Malawi"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Malaysia"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Maldives"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Mali"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Malta"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Marshall Islands"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Martinique"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Mauritania"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Mauritius"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Mayotte"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Mexico"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Micronesia"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Moldova"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Monaco"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Mongolia"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Montenegro"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Montserrat"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Morocco"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Mozambique"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Myanmar"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Namibia"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Nauru"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Nepal"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Netherlands"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Netherlands Antilles"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="New Caledonia"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="New Zealand"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Nicaragua"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Niger"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Nigeria"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Niue"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Norfolk Island"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Northern Mariana Islands"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Norway"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Oman"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Pakistan"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Palau"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Palestine"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Panama"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Papua New Guinea"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Paraguay"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Peru"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Philippines"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Pitcairn"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Poland"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Portugal"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Puerto Rico"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Qatar"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Réunion"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Romania"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Russia"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Rwanda"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="St. Barth"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Saint Helena"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Saint Kitts and Nevis"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Saint Lucia"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Saint Pierre Miquelon"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Saint Martin"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Sint Maarten"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Saint Vincent and the Grenadines"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Samoa"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="San Marino"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Sao Tome and Principe"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Saudi Arabia"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Senegal"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Serbia"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Seychelles"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Sierra Leone"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Singapore"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Slovakia"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Slovenia"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Solomon Islands"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Somalia"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="South Africa"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="South Georgia and the South Sandwich Islands"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="South Sudan"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Spain"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Sri Lanka"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Sudan"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Suriname"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Svalbard and Jan Mayen"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Swaziland"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Sweden"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Switzerland"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Syrian Arab Republic"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Taiwan"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Tajikistan"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Tanzania"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Thailand"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Timor-Leste"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Togo"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Tokelau"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Tonga"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Trinidad and Tobago"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Tunisia"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Turkey"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Turkmenistan"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Turks and Caicos Islands"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Tuvalu"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Uganda"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Ukraine"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="UAE"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="UK"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="USA"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="United States Minor Outlying Islands"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Uruguay"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Uzbekistan"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Vanuatu"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Venezuela"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Vietnam"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="British Virgin Islands"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="U.S. Virgin Islands"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Wallis and Futuna"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Western Sahara"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Yemen"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Zambia"/>
+                        <NavigationViewItem Tag="Country" Icon="World" Content="Zimbabwe"/>
+                    </NavigationView.MenuItems>
+
+
+
+                </NavigationView>
+            </ScrollViewer>
+            <NavigationView x:Name="TopNavBar" Loaded="NavTopBar_Loaded"  ItemInvoked="TopNavBar_ItemInvoked" Content="NavigationView" PaneDisplayMode="Top" Margin="316,0,0,1040" IsBackButtonVisible="Collapsed" IsSettingsVisible="False" IsPaneToggleButtonVisible="False" IsPaneOpen="True">
+                <NavigationView.MenuItems>
+                    <NavigationViewItem Tag="Statistics" Content="Statistics"/>
+                    <NavigationViewItem Tag="Graphs" Content="Graphs"/>
+                </NavigationView.MenuItems>
+            </NavigationView>
+            <TextBlock x:Name="Tester" HorizontalAlignment="Left" Height="642" Margin="516,254,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="1016" Foreground="White" FontSize="48"><Run Text="Information Loading..."/><LineBreak/><Run/></TextBlock>
+        </Grid>
+    </Viewbox>
+</Page>
