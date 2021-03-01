@@ -460,9 +460,7 @@ namespace COVID19_Statistics_Tracker
             dict.Add("Zambia", "ZM");
             dict.Add("Zimbabwe", "ZW");
             return dict;
-        }
-
-        
+        }     
     }
 
 
